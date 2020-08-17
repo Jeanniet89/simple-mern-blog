@@ -11,7 +11,6 @@ server.use(express.urlencoded({ extended: false }))
 server.use('/articles', articleRouter)
 
 const mongoose = require('mongoose')
-
 mongoose.connect(`mongodb://localhost:27017/simple-mern-blog`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
